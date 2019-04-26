@@ -16,7 +16,7 @@ def self.new_by_filename(songname)
   # artist.songs << song
   # artist.add_song(song)
   song
-  
+
 end
 
 # song.artist = Artist.find_or_create_by_name(songname[0])
