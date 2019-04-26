@@ -26,6 +26,7 @@ def self.find_or_create_by_name(artistname)
 
 if @@all.detect {|i| i.name == artistname}
   @@all.detect {|i| i.name == artistname}
+  # i was returninga string before saying this artist exists, can't manipulte string
 else
   artis = Artist.new(artistname)
   artis.save
