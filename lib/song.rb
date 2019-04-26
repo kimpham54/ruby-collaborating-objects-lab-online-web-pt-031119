@@ -18,7 +18,7 @@ def self.new_by_filename(songname)
   artist = Artist.find_or_create_by_name(songname[0])
   # @artist = artist doesn't work because self is the class, @artist doesn't know what instance you're referring to
   song.artist = artist
-  binding.pry
+  # binding.pry
   song.save
   # artist.songs << song
   artist.add_song(song)
