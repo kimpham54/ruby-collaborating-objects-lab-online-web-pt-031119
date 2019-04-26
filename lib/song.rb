@@ -10,7 +10,8 @@ def self.new_by_filename(songname)
   songname = songname.split(" - ")
   song = Song.new(songname[1])
   artist = Artist.find_or_create_by_name(songname[0])
-  @artist = artist
+  # @artist = artist
+  song.artist = self
   # artist.songs << self
   song
   # binding.pry
