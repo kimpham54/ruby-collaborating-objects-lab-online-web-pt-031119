@@ -21,7 +21,7 @@ def self.new_by_filename(songname)
   binding.pry
   song.save
   # artist.songs << song
-  # artist.add_song(song)
+  artist.add_song(song)
   song
 
 end
