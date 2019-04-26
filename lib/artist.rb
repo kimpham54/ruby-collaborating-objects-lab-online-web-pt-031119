@@ -24,12 +24,12 @@ def self.find_or_create_by_name(artistname)
   # @@all.each do |artist|
   #   if artist.name == artistname
 
-if @@all.detect {|i| i.name == artistname} == nil
+if @@all.detect {|i| i.name == artistname}
+  @@all.detect {|i| i.name == artistname}
+else
   artis = Artist.new(artistname)
   artis.save
   artis
-else
-  puts "#{artistname} exists"
 end
 
 end
