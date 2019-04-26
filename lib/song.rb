@@ -13,7 +13,7 @@ def self.new_by_filename(songname)
   # @artist = artist doesn't work because self is the class, @artist doesn't know what instance you're referring to
   song.artist = artist
   # artist.songs << song
-  artist.add_song(song)
+  # artist.add_song(song)
   song
   # binding.pry
 end
