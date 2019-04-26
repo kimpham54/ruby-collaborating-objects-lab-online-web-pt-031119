@@ -13,7 +13,7 @@ def self.new_by_filename(songname)
   song
   # @artist = artist
   # self.artist.songs << self
-  # binding.pry
+  binding.pry
 
 end
 
