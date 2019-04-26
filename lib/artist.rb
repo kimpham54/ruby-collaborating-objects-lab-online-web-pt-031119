@@ -25,8 +25,8 @@ def self.find_or_create_by_name(artistname)
   #   if artist.name == artistname
 
 if @@all.detect {|i| i.name == artistname} == nil
-  artist = Artist.new(artistname)
-  artist.save
+  Artist.new(artistname)
+  self.save
 else
   puts "#{artistname} exists"
 end
